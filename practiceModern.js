@@ -73,4 +73,19 @@
 
 //* Arrow function
 
-const getTwice = function (number) {};
+const getTwice = function (number) {
+  return number * 2;
+};
+
+console.log(getTwice(5));
+
+
+const myBtn
+
+
+
+
+
+
+
+
