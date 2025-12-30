@@ -66,6 +66,6 @@ console.log(sum(10, 5));
 //
 //
 //
-const getCodeit = () => ({ name: "Codeit" });
+const getCodeit = () => ({ name: 'Codeit' });
 
 console.log(getCodeit());

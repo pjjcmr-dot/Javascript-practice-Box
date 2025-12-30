@@ -108,20 +108,28 @@
 //   console.log("button is clicked");
 // });
 
-let x = 3;
+// let x1 = 3;
 
-if (x < 5) {
-  console.log('x는 5보다 작다');
-  console.log('x는 5보다 작다');
-} else {
-  console.log('x는 5와 같거나 크다');
-}
+// if (x1 < 5) {
+//   console.log('x는 5보다 작다');
+// } else {
+//   console.log('x는 5와 같거나 크다');
+// }
 
-for (let i = 0; i < 5; i++) {
-  console.log(i);
-}
+// for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// }
 
+// //! 조건문과 반복문은 값으로 평가 받지 않고 오로지 문장으로 평가 받는다.
+// let x;
+// x = 3;
 
+// console.log(if (x < 5) {
+//   console.log('x는 5보다 작다');
+// } else {
+//   console.log('x는 5보다 크다');
+// });
 
-
-
+// const someloop = for (let i = 0; i < 5; i++) {
+//   console.log(i);
+// };
