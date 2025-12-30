@@ -1,8 +1,3 @@
-//+---------------------------------------+
-//                         djfdjsklfjlsdjf|
-//+---------------------------------------+
-//--------
-
 // //todo 반복문이 아니라 추가하는것
 // function firstWords() {
 //   let word = "";
@@ -48,6 +43,7 @@
 // printAguments('uqw', 'afv', 'qwqwqw');
 // printAguments('uwww', 'aqqqqq');
 
+// //* rest parameter2
 // function firstWords() {
 //   let word = '';
 
@@ -64,13 +60,23 @@
 // firstWords('결국', '자바스크립트가', '해피한', '지름길');
 // firstWords('빨간색', '주황색', '노란색', '초록색', '파란색', '남색', '보라색');
 
-// let rest = ["치킨", "피자", "햄버거"];
+// //* rest parameter3
+// let rest = ['치킨', '피자', '햄버거'];
 
 // let firstFood = rest.shift();
 
 // console.log(firstFood);
 // console.log(rest);
 
-//* Arrow function
+//* rest parameter4, TODO: rest.shift() 앞부분에 변수를 정해주지 않았을 경우
+function ignoreFirst(...rest) {
+  rest.shift();
 
-const getTwice = function (number) {};
+  for (const el of rest) {
+    console.log(el);
+  }
+}
+
+ignoreFirst('1세대', '2세대', '3세대');
+ignoreFirst('곰팡이', '강아지', '고양이');
+ignoreFirst(20, 9, 18, 19, 30, 34, 40);
