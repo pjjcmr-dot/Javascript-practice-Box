@@ -49,3 +49,23 @@
 // });
 
 //? 총 정리
+
+const getTwice = (number) => number * 2; // parameter가 1개 일때는 ()는 생략 가능하다
+// return문 하나만 있고 다른 내용이 없을때는 return문은 생략 가능하다
+console.log(getTwice(3));
+//
+//
+//
+const sum = (a, b) => {
+  const result = a + b; // return외 다른 값이 함수 범위에 있을때는 return 값을  생략하지 않는다.
+  return result;
+};
+
+console.log(sum(10, 5));
+
+//
+//
+//
+const getcodoit = () => ({ name: "Codeit" });
+
+console.log(getcodoit());

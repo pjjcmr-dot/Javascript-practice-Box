@@ -1,5 +1,1 @@
-const getTwice = (number) => {
-  return number * 2;
-};
-
-console.log(getTwice(5));
+console.log(sum(3, 5));
