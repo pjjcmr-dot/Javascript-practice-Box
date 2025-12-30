@@ -43,7 +43,6 @@
 // printAguments('uqw', 'afv', 'qwqwqw');
 // printAguments('uwww', 'aqqqqq');
 
-// //* rest parameter2
 // function firstWords() {
 //   let word = '';
 
@@ -60,23 +59,69 @@
 // firstWords('결국', '자바스크립트가', '해피한', '지름길');
 // firstWords('빨간색', '주황색', '노란색', '초록색', '파란색', '남색', '보라색');
 
-// //* rest parameter3
-// let rest = ['치킨', '피자', '햄버거'];
+// let rest = ["치킨", "피자", "햄버거"];
 
 // let firstFood = rest.shift();
 
 // console.log(firstFood);
 // console.log(rest);
 
-//* rest parameter4, TODO: rest.shift() 앞부분에 변수를 정해주지 않았을 경우
-function ignoreFirst(...rest) {
-  rest.shift();
+//* Arrow function
+// //?변수에 할당하는 함수 = 함수 표현식
+//! const getTwice = function (number) {
+//!   return number * 2;
+//! };
 
-  for (const el of rest) {
-    console.log(el);
-  }
+// console.log(getTwice(5));
+// console.log("----------------");
+
+// //? 함수 선언식
+//! function getTwice(number) {
+//!   return number * 2;
+//! };
+
+//argument 로 함수의 속성을 포함
+// const myBtn = document.querySelector("#myBtn");
+
+// myBtn.addEventListener("click", function () {
+//   console.log("button is clicked");
+// });
+
+// //? Arrow function => 화살표 함수로 변환
+//변수에 할당하는 함수
+//! const getTwice = (number) => {
+//!   return number * 2;
+//! };
+
+// console.log(getTwice(5));
+// console.log("----------------");
+
+//! const getTwice = (number) => number * 2;
+
+// console.log(getTwice(6));
+// console.log("----------------");
+
+// //?argument 로 함수의 속성을 포함, 콜백함수
+// const myBtn = document.querySelector("#myBtn");
+
+// myBtn.addEventListener("click", () => {
+//   console.log("button is clicked");
+// });
+
+let x = 3;
+
+if (x < 5) {
+  console.log('x는 5보다 작다');
+  console.log('x는 5보다 작다');
+} else {
+  console.log('x는 5와 같거나 크다');
 }
 
-ignoreFirst('1세대', '2세대', '3세대');
-ignoreFirst('곰팡이', '강아지', '고양이');
-ignoreFirst(20, 9, 18, 19, 30, 34, 40);
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+
+
+
+

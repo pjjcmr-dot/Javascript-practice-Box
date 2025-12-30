@@ -38,7 +38,7 @@
 
 // const getTwice1 = number => number * 2;
 
-// console.log(getTwice(6));
+// console.log(getTwice1(6));
 // console.log("----------------");
 
 //?argument 로 함수의 속성을 포함
@@ -66,6 +66,6 @@ console.log(sum(10, 5));
 //
 //
 //
-const getcodoit = () => ({ name: "Codeit" });
+const getCodeit = () => ({ name: "Codeit" });
 
-console.log(getcodoit());
+console.log(getCodeit());
