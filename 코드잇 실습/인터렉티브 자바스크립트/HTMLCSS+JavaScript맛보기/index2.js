@@ -1,15 +1,18 @@
-// css 선택자로 태그 선택하기
-const myTag = document.querySelector("#myNumber");
-console.log(myTag);
-
-const myTag2 = document.getElementById("myNumber");
-console.log(myTag2);
-
-const myTag3 = document.querySelector(".color-btn");
-console.log(myTag3);
-
-const myTags1 = document.querySelectorAll(".color-btn");
+//* getElementsByClassName
+const myTags1 = document.getElementsByClassName("color-btn");
 console.log(myTags1);
+console.log(myTags1[1]);
+console.log(myTags1.length);
 
-const myTags2 = document.getElementsByClassName("color-btn");
+for (let tag of myTags1) {
+  console.log(tag);
+}
+
+const myTags2 = document.getElementsByClassName("red");
 console.log(myTags2);
+console.log(myTags2[0]);
+
+const myTags3 = document.getElementsByClassName("white");
+console.log(myTags3);
+console.log(myTags3 === null);
+console.log(myTags3.length);
