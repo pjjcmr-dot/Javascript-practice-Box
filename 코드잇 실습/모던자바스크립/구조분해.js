@@ -142,3 +142,53 @@
 //     `최근 '${name}'님이 즐겨듣는 노래는 '${singer}'의 '${title}'이라는 노래입니다.`
 //   );
 // }
+
+// Array Destructuring
+// const members = ["코딩하는효준", "글쓰는유나", "편집하는민환"];
+// const [macbook, ipad, coupon] = members;
+
+// console.log(macbook); // 코딩하는효준
+// console.log(ipad); // 글쓰는유나
+// console.log(coupon); // 편집하는민환
+
+// // Object Destructuring
+// const macbookPro = {
+//   title: "맥북 프로 16형",
+//   price: 3690000,
+// };
+
+// const { title, price } = macbookPro;
+
+// console.log(title); // 맥북 프로 16형
+// console.log(price); // 3690000
+
+//함수에서 default parater, rest parameter를 다루듯이 Destructuring 문법을 활용할 때도 기본값과 rest 문법을 활용할 수 있습니다.
+// Array Destructuring
+const members = [
+  "코딩하는효준",
+  "글쓰는유나",
+  undefined,
+  "편집하는민환",
+  "촬영하는재하",
+];
+const [macbook, ipad, airpod = "녹음하는규식", ...coupon] = members;
+
+console.log(macbook); // 코딩하는효준
+console.log(ipad); // 글쓰는유나
+console.log(airpod); // 녹음하는규식
+console.log(coupon); // (2) ["편집하는민환", "촬영하는재하"]
+
+// Object Destructuring
+const macbookPro = {
+  title: "맥북 프로 16형",
+  price: 3690000,
+  memory: "16 GB 2667 MHz DDR4",
+  storage: "1TB SSD 저장 장치",
+};
+
+const { title, price, color = "silver", ...rest } = macbookPro;
+
+console.log(title); // 맥북 프로 16형
+console.log(price); // 3690000
+console.log(color); // silver
+console.log(rest); // {memory: "16 GB 2667 MHz DDR4", storage: "1TB SSD 저장 장치"}

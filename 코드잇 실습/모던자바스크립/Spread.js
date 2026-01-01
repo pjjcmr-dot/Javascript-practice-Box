@@ -74,3 +74,28 @@
 // console.log(arr5);
 // [1] 하나의 값은 오류가 발생한다
 // 객체 속성으로 스프레드 구문을 사용하면 객체의 속성으로 표현된다
+//
+//
+// const webPublishing = ["HTML", "CSS"];
+// const interactiveWeb = [...webPublishing, "JavaScript"];
+
+// console.log(webPublishing);
+// console.log(interactiveWeb);
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+
+// const arr3 = [...arr1, ...arr2];
+// console.log(arr3);
+//
+//! 배열은 객체로 펼칠 수 있지만 객체는 배열로 펼칠 수 없다
+// const members = ["태호", "종훈", "우재"];
+// const newObject = { ...members }; //todoFIXME: []은 ===> {}로 펼칠 수 있다.
+
+// console.log(newObject); // {0: "태호", 1: "종훈", 2: "우재"}
+
+// const topic = {
+//   name: "모던 자바스크립트",
+//   language: "JavaScript",
+// };
+// const newArray = [...topic]; // TypeError! //todoFIXME: {}은 ===> []로 펼칠 수 없다.
